@@ -34,7 +34,7 @@ app.post('/bfhl', (req, res, next) => {
         even_numbers: even
     })
 })
-
-app.listen(4000, () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
     console.log('Server Started on Port 4000');
 })
